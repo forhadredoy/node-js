@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Student Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="student-form">
+      <form action="/create" method="post" enctype="multipart/form-data">
+        <label>Name</label>
+        <input type="text" name="name" /><br />
+        <label>Roll</label>
+        <input type="text" name="roll" /><br />
+        <label>Reg</label>
+        <input type="text" name="reg" /><br />
+        <label>Class</label>
+        <input type="text" name="class" /><br />
+        <label>Photo</label>
+        <input type="file" name="photo" /><br />
+        <button type="submit">Save</button>
+      </form>
+    </div>
+
+    <style>
+      .student-form {
+        width: 100%;
+      }
+      form {
+        max-width: 300px;
+        padding: 25px;
+        margin: 0 auto;
+      }
+      input[type="text"] {
+        width: 100%;
+        border: 1px solid #333;
+        margin-bottom: 10px;
+      }
+      button {
+        border: 0;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 5px 20px;
+        background-color: rgb(8, 102, 4);
+        color: #fff;
+      }
+    </style>
+  </body>
+</html>
